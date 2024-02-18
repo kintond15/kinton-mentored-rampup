@@ -1,11 +1,7 @@
-function myFunction() {
-  alert("This is the correct way to do js ☺️ 😊🥰👉👈");
-}
+function redirectToTop10() {
+  // Redirect to the Top 10 section
+  window.location.href = '#top10';
 
-function submit() {
-    username = document.getElementById('username');
-    email = document.getElementById('email');
-    password = document.getElementById('password');
-    alert('Username:', username.value, 'Email:', email.value, 'Password:', password.value);
-    return false;
+  // Remove the original section from the DOM
+  document.querySelector('.original-section').remove();
 }
